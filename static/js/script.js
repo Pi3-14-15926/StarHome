@@ -101,7 +101,20 @@ function getCookie(name) {
 
 document.addEventListener('DOMContentLoaded', function () {
 
-
+    // 随机背景图片
+    var backgrounds = [
+        './static/img/background01.jpg',
+        './static/img/background02.jpg',
+        './static/img/background03.jpg',
+        './static/img/background04.jpg'
+    ];
+    var randomIndex = Math.floor(Math.random() * backgrounds.length);
+    var randomBg = backgrounds[randomIndex];
+    document.body.style.backgroundImage = 'url(' + randomBg + ')';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundPosition = 'center';
+    document.body.style.backgroundAttachment = 'fixed';
 
 
 
