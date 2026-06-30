@@ -103,10 +103,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 随机背景图片
     var backgrounds = [
-        './static/img/background01.jpg',
-        './static/img/background02.jpg',
-        './static/img/background03.jpg',
-        './static/img/background04.jpg'
+        './static/img/background01.webp',
+        './static/img/background02.webp',
+        './static/img/background03.webp',
+        './static/img/background04.webp'
     ];
     var randomIndex = Math.floor(Math.random() * backgrounds.length);
     var randomBg = backgrounds[randomIndex];
